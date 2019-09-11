@@ -75,7 +75,8 @@ gulp.task('sass', function(){
     //css压缩
     .pipe(minifyCss())
     //将合并压缩后的文件输出到dist/static/css下（假如没有dist目录则自动生成dist目录）
-    .pipe(gulp.dest('dist/static/css'))
+    .pipe(gulp.dest('dist/static/css'));
+    
 });
 
 gulp.task('html', function(){
