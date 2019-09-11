@@ -1,0 +1,465 @@
+/* 雪碧图 */
+.linkTool li i,
+.searchArea .btnSo,
+.miniHeaderArea .pageTitWrap h4 i,
+.ico_feedback,
+.ico_server,
+.ico_gotop {
+	background: url(/app_images/pingan/pa_2017/icon.png) no-repeat;
+}
+.miniHeaderArea .pageTitWrap h4 span{
+	background: url(/app_images/pingan/pa_2017/icon_01.png) no-repeat;
+}
+/* 顶部工具条 Start */
+.topbarWrap {
+	width: 100%;
+	height: 30px;
+	background: #eee;
+}
+.topbarArea {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.loginMod {
+	float: left;
+}
+.loginMod h3 {
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #171717;
+}
+.loginMod ul {
+	float: left;
+	margin-left: 10px;
+	padding: 7px 0 0;
+}
+.loginMod li {
+	float: left;
+	line-height: 16px;
+	font-size: 12px;
+	color: #171717;
+	border-left: 1px solid #c1c1c1;
+	padding: 0 10px;
+}
+.loginMod li:first-child { border-left: 0 none}
+.loginMod li a {
+	font-size: 12px;
+	color: #f60;
+}
+.loginMod li a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+.linkTool {
+	float: right;
+	padding: 6px 0 0;
+}
+.linkTool li {
+	float: left;
+	line-height: 18px;
+	border-left: 1px solid #c1c1c1;
+	padding: 0 15px;
+}
+.linkTool li:first-child { border-left: 0 none}
+.linkTool li a {
+	font-size: 12px;
+	color: #171717;
+}
+.linkTool li a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.linkTool li i {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: -4px;
+	*vertical-align: middle;
+}
+.linkTool li .ico_mobile {
+	background-position: -50px 0;
+}
+.linkTool li .ico_sitemap {
+	background-position: -80px 0;
+}
+/* 顶部工具条 End */
+
+/* 头部 Start */
+.headerWrap {
+	width: 100%;
+	height: 80px;
+}
+.headerFixedArea {
+	width: 100%;
+	height: 50px;
+	padding: 15px 0;
+	background: #fff;
+}
+.headerArea {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.headerArea .logo {
+	display: block;
+	float: left;
+	width: 180px;
+	height: 34px;
+	text-indent: -999em;
+	margin-top: 8px;
+	background: url(/app_images/pingan/pa_2017/logo_orange.png) no-repeat; 
+}
+.headerArea .nav {
+	float: left;
+	margin-left: 150px;
+}
+.headerArea .nav li {
+	float: left;
+	display: inline;
+	line-height: 50px;
+	font-size: 16px;
+	color: #171717;
+	margin-left: 65px;
+}
+.headerArea .nav li:first-child { margin-left: 0}
+.headerArea .nav li a {
+	font-size: 16px;
+	color: #171717;
+}
+.headerArea .nav li a:hover {
+	color: #f60;
+	text-decoration: none;
+}
+.headerArea .nav .curr a {
+	color: #f60;
+}
+.searchWrap {
+	float: right;
+	margin-right: 10px;
+	width: 300px;
+}
+.searchArea {
+	position: relative;
+	z-index: 2;
+	zoom: 1;
+}
+.searchArea input {
+	display: block;
+	width: 250px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #171717;
+	padding: 3px 38px 3px 8px;
+	border: 2px #ddd solid;
+	border-radius: 2px;
+	background: #fff;
+}
+.searchArea input.focus {
+	border-color: #bbb
+}
+.searchArea .btnSo {
+	display: block;
+	position: absolute;
+	top: 2px;
+	*top: 3px;
+	right: 2px;
+	width: 35px;
+	height: 26px;
+	text-indent: -999em;
+	background-position: -105px 4px;
+	background-color: #fff;
+}
+.searchWrap .hotKeywords {
+	height: 20px;
+	overflow: hidden;
+}
+.searchWrap .hotKeywords li {
+	float: left;
+	display: inline;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+	margin-left: 10px;
+}
+.searchWrap .hotKeywords li:first-child { margin-left: 0}
+.searchWrap .hotKeywords .highlight a { color: #f60}
+
+/*--- 滚动固定 headerFixed ---*/
+.headerFixed {
+	height: 60px;
+}
+.headerFixed .headerFixedArea {
+	position: fixed;
+	z-index: 99;
+	zoom: 1;
+	top: 0;
+	left: 0;
+	height: 45px;
+	padding: 15px 0 0;
+	background: #f60;
+}
+.headerFixed .headerArea .logo {
+	margin-top: 0;
+	background: url(/app_images/pingan/pa_2017/logo_white.png) no-repeat; 
+}
+.headerFixed .headerArea .nav li {
+	line-height: 30px;
+	color: #fff;
+}
+.headerFixed .headerArea .nav li a {
+	font-size: 16px;
+	color: #fff;
+}
+.headerFixed .headerArea .nav li a:hover {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.headerFixed .headerArea .nav .curr a {
+	color: #fff;
+	font-weight: bold;
+}
+.headerFixed .searchArea input,
+.headerFixed .searchArea input.focus {
+	border-color: #fff
+}
+.headerFixed .searchWrap .hotKeywords {
+	display: none;
+}
+/* 头部 End */
+
+
+
+/* 小头部 Start */
+.miniHeaderWrap {
+	width: 100%;
+	background: #fff;
+}
+.miniHeaderArea {
+	width: 1150px;
+	margin: 0 auto;
+	padding: 23px 25px;
+	background-color: #fff;
+}
+.miniHeaderArea .logo {
+	display: block;
+	float: left;
+	width: 180px;
+	height: 34px;
+	text-indent: -999em;
+	background: url(/app_images/pingan/pa_2017/logo_orange.png) no-repeat;
+}
+.miniHeaderArea .pageTitWrap {
+	float: right;
+}
+.miniHeaderArea .pageTitWrap h3 {
+	display: inline-block;
+	float: left;
+	line-height: 34px;
+	font-size: 24px;
+	color: #171717;
+	font-weight: normal;
+}
+.miniHeaderArea .pageTitWrap h4 {
+	display: inline-block;
+	padding-left: 35px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #666;
+	font-weight: normal;
+	float:left;
+	background-color:#fff;
+}
+.miniHeaderArea .pageTitWrap h4 a{
+	color:#f60;
+}
+.miniHeaderArea .pageTitWrap h4 i,.miniHeaderArea .pageTitWrap h4 span{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	vertical-align: -10px;
+	vertical-align: middle;
+	margin-right: 10px;
+	background-position: 0 0;
+}
+.miniHeaderArea .pageTitWrap h4 em {
+	font-size: 18px;
+	color: #f60;
+	font-style: italic;
+}
+/* 小头部 End */
+
+/*============================ footer =========================*/
+.footerWrap { width:100%; overflow:hidden; background: #f4f4f4; margin:0 auto; padding: 40px 0}
+.footerWrap .footerArea { margin:0 auto; width:1200px}
+.footerWrap dl { float:left; margin: 0 40px; width:168px; display:inline}
+.footerWrap dt { display:block; color:#333; font-weight:bold; padding-bottom:10px; line-height:1.2em; font-size:14px}
+.footerWrap dt a  { color:#333; }
+.footerWrap dd { display:block; padding-bottom:10px; line-height:1.2em}
+.footerWrap dd a { padding-right:10px; color:#646464}
+.footerWrap dd a:hover { color: #f60; text-decoration: underline}
+.footerWrap .first { width:140px; height:141px}
+.footerWrap .paTel { float:left; margin: 0 0 0 20px}
+.footerWrap .qrCode { float:right; margin: 0}
+.footerWrap .copyright { width:1180px; margin: 0 auto; padding: 20px 0 0 20px; color:#acacac}
+.footerWrap .cp_txt { line-height:2em; float:left}
+.footerWrap .cp_txt a  { color:#333; }
+.footerWrap .icp { float:right; padding-right: 30px; margin-top: 20px}
+.footerWrap .icp a { float:left; line-height: 24px; color:#333; margin-left:10px}
+.footerWrap .icp a:hover { color:#f60;  text-decoration: underline}
+.footerWrap .icp .icon_wangan,
+.footerWrap .icp .icon_anquan { display:block; text-indent:-9999px; width: 15px; height: 23px; overflow:hidden; vertical-align:middle; background: url(/app_images/pingan/pa_2017/icp_ico.png) no-repeat;}
+.footerWrap .icp .icon_wangan { background-position: 0 0; }
+.footerWrap .icp .icon_anquan { background-position: 0 -27px; }
+/*============================ footer =========================*/
+
+/* 跟随浮动 */
+.followFixedArea {
+	position: fixed;
+	z-index: 999;
+	zoom: 1;
+	right: 20px;
+	bottom: 150px;
+}
+.followFixedArea ul {
+	width: 60px;
+}
+.followFixedArea li {
+	display: block;
+	margin-top: 10px;
+}
+.followFixedArea li:first-child {
+	margin-top: 0;
+}
+.followFixedArea li a {
+	display: block;
+	width: 30px;
+	height: 40px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 4px;
+	text-indent: -999em;
+	background-color: rgb(247, 133, 85);
+	background-color: rgba(250, 107, 48, .8);
+}
+.ico_feedback {
+	background-position: -30px -50px
+}
+.ico_server {
+	background-position: -90px -50px
+}
+.ico_gotop{
+	background-position: -30px -110px
+}
+.followFixedArea li a:hover {
+	text-indent: 0;
+	color: #fff;
+	text-decoration: none;
+	background: #f60
+}
+
+/* 面包屑 Start */
+.breadCrumb {
+	width: 1200px;
+	line-height: 46px;
+	font-size: 14px;
+	color: #171717;
+	margin: 0 auto;
+}
+.breadCrumb em {
+	font-size: 16px;
+	font-style: normal;
+}
+.breadCrumb i {
+	padding: 0 8px;
+}
+.breadCrumb a {
+	color: #171717;
+}
+.breadCrumb a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+/* 面包屑 End */
+
+/*正在加载*/
+.proLoading {
+	display: block;
+    position: fixed;
+    top: 400px;
+    left: 45%;
+    z-index: 9;
+    width: 120px;
+    height: 120px;
+    background: url(/app_images/pingan/pa_2017/paloading.gif) no-repeat;
+}
+
+/*广告*/
+.topAdbox {
+    display: none;
+    overflow: hidden;
+	text-align: center;
+}
+
+.topAdbox .top-banner img {
+    display: block;
+    width: 2500px;
+    height: 200px;
+	margin-left: -1250px;
+    left: 050%;
+    position: relative;
+}
+
+.header-sprite,.m_login_bar .mod_right em,.m_login_bar .mod_right li:hover em,.m_login_bar .mod_right .i_app i,.m_login_bar .i_fuwu i,.m_login_bar .i_ditu i,.m_head_menu .btn_sc,.m_head_menu .schistory i{background:url('/app_images/pingan/pa_2016/header.png?v=20160713152925') no-repeat}
+.m_login_bar{height:30px;width:100%;position:relative;z-index:999;color:#666;background:#eee;font:12px/30px "Microsoft Yahei", sans-serif}
+.m_login_bar a { color: #333;}
+.m_login_bar a:hover{ color:#f60;text-decoration:none}
+.m_login_bar .content{width:1180px;height:30px;margin:0 auto;position:relative}
+.m_login_bar .mod_left li{float:left;margin-right:25px}
+.m_login_bar .mod_left .fgx{margin:0 14px;color:#666;font-style:normal}
+.m_login_bar .mod_right{position:absolute;top:0;right:0}
+.m_login_bar .mod_right .popupbox{max-height:0;overflow:hidden;position:absolute;right:0;top:29px;z-index:80;*width:362px;*max-height:1000px;*display:none;-webkit-transition:max-height 0.5s;-moz-transition:max-height 0.5s;-o-transition:max-height 0.5s;transition:max-height 0.5s}
+.m_login_bar .mod_right .bar_popup{border:solid 1px #acacac;background:#fff;font-size:0;display:none}
+.m_login_bar .mod_right i,.m_login_bar .mod_right em{display:inline-block;vertical-align:middle;position:relative;top:-1px}
+.m_login_bar .mod_right em{background-position:0 -88px;height:17px;width:22px}
+.m_login_bar .mod_right li{float:left}
+.m_login_bar .mod_right li>a{display:block;position:relative;z-index:70;height:30px;border:solid 1px #f0f0f0;border-width:0 1px;padding:0 5px;color:#333}
+.m_login_bar .mod_right li:hover em{background-position:0 -27px;height:17px;width:22px}
+.m_login_bar .mod_right li:hover>a{background:#fff;border-color:#acacac;z-index:90}
+.m_login_bar .mod_right li:hover .popupbox{max-height:500px;*display:block}
+.m_login_bar .mod_right li:hover .bar_popup{display:block}
+.m_login_bar .mod_right .i_app{padding:0 5px}
+.m_login_bar .mod_right .i_app i{background-position:-22px -88px;height:27px;width:20px}
+.m_login_bar .mod_right .i_app:hover>a{background:transparent;border-color:transparent;color:#f60}
+.m_login_bar .mod_right .i_fuwu:hover>a{background:transparent;border-color:transparent;color:#f60}
+.m_login_bar .i_fuwu i{background-position:-21px 0;height:27px;width:24px}
+.m_login_bar .i_fuwu .bar_popup{width:360px;padding:10px 0;line-height:30px;color:#666}
+.m_login_bar .i_fuwu .bar_popup p{padding-left:38px;font-size:12px}
+.m_login_bar .i_fuwu .bar_ewm{display:inline-block;width:110px;margin:0 40px 0 30px;text-align:center;font-size:12px}
+.m_login_bar .i_ditu i{background-position:-22px -27px;height:27px;width:20px}
+.m_login_bar .i_ditu .popupbox{*width:702px}
+.m_login_bar .i_ditu .bar_popup{width:700px}
+.m_login_bar .i_ditu .bar_popup dl{float:left;padding:10px 0 20px 35px;width:105px;font-size:12px;line-height:26px}
+.m_login_bar .i_ditu .bar_popup dt{font:bold 14px/30px "Microsoft Yahei", sans-serif;color:#333}
+.w1000 .content{width:1000px}
+.m_head_menu{position:absolute;left:0;top:30px;width:100%;height:80px;z-index:998;background:#fff}
+.m_head_menu .content{width:1180px;height:80px;margin:0 auto;position:relative;background:#fff}
+.m_head_menu .logo{position:absolute;display:block;width:172px;height:34px;left:0;top:23px}
+.m_head_menu .sc_box{position:relative; z-index: 3;top:15px;width:698px;height:34px;margin-left: 220px}
+.m_head_menu .sc_pop{position:absolute;top:34px;left:0;z-index:999;width:698px;height:400px;background:#fff;overflow:hidden;border:solid 1px #ddd;border-width:0 1px 1px;display:none}
+.m_head_menu .sc_pop a{color:#151515;text-decoration:none}
+.m_head_menu .sc_pop dl{margin-top:10px;text-align:left}
+.m_login_bar .mod_right .i_lang > a {
+    display: inline;
+    color: #999;
+}
+.m_login_bar .mod_right .i_lang > a:hover { background: transparent; border-color: transparent; color: #f60}
+.m_login_bar .mod_right .i_lang:hover > a { background: transparent; border-color: transparent;}

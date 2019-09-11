@@ -1,0 +1,407 @@
+body {
+	background: #ebebeb;
+}
+/* Icon */
+.radioList li i {
+	background: url(/app_images/pingan/pa_2017/icon.png) no-repeat;
+}
+
+.contentWrap {
+	width: 1160px;
+	background: #fff;
+	padding: 20px;
+	margin: 0 auto 30px;
+}
+/* Tab ui */
+.tabNav {
+	line-height: 40px;
+	border-bottom: 2px #ddd solid;
+}
+.tabNav ul li {
+	display: inline-block;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #171717;
+	font-weight: bold;
+	margin-right: 60px;
+	margin-bottom: -2px;
+	cursor: pointer;
+	border-bottom: 2px transparent solid;
+}
+.tabNav ul li:hover {
+	color: #f60
+}
+.tabNav ul .curr {
+	color: #f60;
+	border-color: #f60;
+}
+.tabCont {
+	padding: 20px 0 0;
+}
+
+/* 微客服 */
+.microService {
+	margin: -10px 0 0 -10px;
+}
+.microService li {
+	float: left;
+	width: 348px;
+	margin: 10px 0 0 10px;
+	padding: 15px;
+	border: 1px #e5e5e5 solid;
+	border-radius: 3px;
+}
+.microService li:hover {
+	border-color: #ffb997
+}
+.microService li img {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.microService .weChat {
+	margin-left: 115px;
+	line-height: 18px;
+}
+.microService .weChat h4, .microService .weChat h5 {
+	font-weight: normal;
+}
+.microService .weChat h3 {
+	line-height: 26px;
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	padding: 0 0 10px;
+}
+.microService .weChat h4 {
+	font-size: 12px;
+	color: #666
+}
+.microService .weChat h5 {
+	font-size: 14px;
+	color: #171717
+}
+
+/* APP */
+.appArea {
+	margin-top: -15px;
+	overflow: hidden;
+}
+.appArea li {
+	float: left;
+	width: 270px;
+	padding: 20px 20px 20px 0;
+	border-bottom: 1px #e5e5e5 solid;
+	margin-bottom: -1px;
+}
+.appArea li a {
+	display: inline-block;
+	width: auto;
+	height: 60px;
+}
+.appArea li a:hover {
+	text-decoration: none;
+}
+.appArea li img {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.appArea li .desc {
+	margin-left: 75px;
+}
+.appArea li h3 {
+	line-height: 24px;
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.appArea li h3:hover {
+	text-decoration: underline;
+}
+.appArea li p {
+	line-height: 24px;
+	font-size: 12px;
+	color: #666;
+}
+
+/* 电话客服 */
+.phoneService {
+	padding: 10px 0 0;
+	position: relative;
+}
+.appService {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	cursor: pointer;
+	padding-left: 10px;
+	border-left: 2px solid #fc6921;
+}
+
+.phoneService  .appService  h3 {
+	border-left: 0;
+	background: #FC6921 url(/app_images/pingan/pa_2017/app_bg.png) no-repeat 7px center;
+	border-radius: 5px;
+}
+.appService:hover  .qrcodeAppBox {
+	display: block;
+}
+.qrcodeAppBox {
+	display: none;
+	position: absolute;
+	width: 136px ;
+	height: 162px;
+	background: url(/app_images/pingan/pa_2017/qrcode_app.png) no-repeat 0 0;
+}
+.qrcodeAppBox img {
+	width: 105px;
+    padding: 20px 0 0 15px;
+}
+.phoneService h3 {
+	width:70px;
+	height:30px;
+	background: url(/app_images/pingan/pa_2017/kehufuwu_bg.png) no-repeat 8px 0;
+	background-size:100px 30px;
+	line-height: 30px;
+    font-size: 16px;
+    color:#fff;
+    padding-left:38px;
+    border-left: 2px solid #fc6921;
+}
+.phoneService .inner {
+    margin: 48px auto 0;
+    border: 1px #ddd solid;
+    border-radius: 2px;
+}
+.branchPhoneArea {
+	float: left;
+	width: 273px;
+	min-height: 255px;
+	padding: 15px 0 0 15px;
+    border-left: 1px #ddd solid;
+    margin-left: -1px;
+}
+.branchPhoneArea h4 {
+	line-height: 24px;
+	font-size: 14px;
+	color: #fc6921;
+	padding: 0 0 10px
+}
+.branchPhoneArea dl {
+	line-height: 26px;
+	font-size: 12px;
+	color: #666;
+	clear: both;
+}
+.branchPhoneArea dt {
+	float: left;
+	width: 100px;
+}
+.branchPhoneArea dt a {
+	color: #666;
+}
+.branchPhoneArea dt a:hover {
+	color: #fc6921;
+	text-decoration: underline;
+}
+.branchPhoneArea dd {
+	margin-left: 110px;
+}
+
+/* 服务网点 */
+.serviceNetwork {
+	padding: 0 0 10px
+}
+.serviceNetwork h3 {
+    line-height: 22px;
+    font-size: 20px;
+    color: #171717;
+    padding-left: 8px;
+    border-left: 2px solid #fc6921;
+}
+.serviceNetwork ul {
+    border: 1px #ddd solid;
+    border-radius: 2px;
+    margin: 18px auto 0;
+	padding: 5px 0 20px;
+}
+.serviceNetwork li {
+	float: left;
+	line-height: 18px;
+	font-size: 14px;
+	padding: 0 25px;
+    border-left: 1px solid #ddd;
+    margin: 15px 0 0 -1px;
+}
+.serviceNetwork li a {
+	color: #171717
+}
+.serviceNetwork li a:hover {
+	color: #fc6921;
+	text-decoration: underline;
+}
+.ico_service {
+	display: inline-block;
+	width: 20px;
+	height: 22px;
+	text-indent: -999em;
+	vertical-align: -2px;
+	*vertical-align: middle;
+	margin-left: 10px;
+	background: url(/app_images/pingan/pa_2017/icon_01.png) no-repeat;
+	background-position: 0 -45px;
+}
+.ico_service:hover {
+	background-position: 0 -70px;
+}
+
+/* 留言反馈 */
+.feedBack {
+	padding: 10px 0 20px
+}
+.feedBack dl {
+	padding: 0 0 20px
+}
+.feedBack dt {
+	float: left;
+	width: 165px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+	text-align: right;
+}
+.feedBack dt em {
+	font-style: normal;
+	color: #f60;
+	padding: 0 5px 0 0
+}
+.feedBack dd {
+	margin-left: 180px;
+}
+.radioList li {
+	float: left;
+	width: 60px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #171717;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.radioList.type {
+	width: 600px;
+}
+.radioList.type li {
+	width: 100px;
+}
+.radioList li i {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 8px;
+	vertical-align: -4px;
+	*vertical-align: 0;
+	background-position: 0 -100px;
+}
+.radioList .select i {
+	background-position: 0 -125px;
+}
+.iptArea {
+}
+.province, .citys, .otherCity  {
+	float: left;
+	margin-right: 15px;
+}
+.province .ui-ipt, .citys .ui-ipt {
+	width: 90px;
+	padding: 5px 25px 5px 5px
+}
+.otherCity em {
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+	font-style: normal;
+}
+.ui-textarea {
+	width: 550px;
+	height: 110px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #171717;
+	border: 1px solid #d2d2d2;
+	padding: 5px;
+}
+.ui-ipt {
+	display: inline-block;
+	width: 170px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #171717;
+	border: 1px solid #d2d2d2;
+	padding: 5px;
+}
+.zoneCode {
+	width: 48px;
+}
+.phoneNum {
+	width: 98px;
+}
+.dash {
+	float: left;
+	width: 12px;
+	font-style: normal;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+.hint {
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666;
+	padding: 0 10px;
+}
+.validatecode {
+	float: left;
+	width: 70px;
+	height: 30px;
+	margin-left: 10px;
+}
+.reloadCode {
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	color: #f60;
+	text-decoration: underline;
+	margin-left: 10px;
+}
+.reloadCode:hover {
+	color: #f60;
+	text-decoration: none;
+}
+.btnSubmit {
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	background: #f60;
+}
+.btnSubmit:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #f30;
+}
+
+
