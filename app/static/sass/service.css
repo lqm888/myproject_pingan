@@ -9,7 +9,7 @@ body {
 .contentWrap {
 	width: 1160px;
 	background: #fff;
-	padding: 20px;
+	padding: 20px;               
 	margin: 0 auto 30px;
 }
 /* Tab ui */
@@ -18,7 +18,6 @@ body {
 	border-bottom: 2px #ddd solid;
 }
 .tabNav ul li {
-	display: inline-block;
 	float: left;
 	height: 40px;
 	line-height: 40px;
@@ -143,12 +142,10 @@ body {
 	padding-left: 10px;
 	border-left: 2px solid #fc6921;
 }
-
-.phoneService  .appService  h3 {
-	border-left: 0;
-	background: #FC6921 url(/app_images/pingan/pa_2017/app_bg.png) no-repeat 7px center;
-	border-radius: 5px;
+.appService h3,h4{
+	font-weight: bold;
 }
+
 .appService:hover  .qrcodeAppBox {
 	display: block;
 }
@@ -157,7 +154,7 @@ body {
 	position: absolute;
 	width: 136px ;
 	height: 162px;
-	background: url(/app_images/pingan/pa_2017/qrcode_app.png) no-repeat 0 0;
+	background: url(../images/qrcode_app_su.png) no-repeat 0 0;
 }
 .qrcodeAppBox img {
 	width: 105px;
@@ -166,13 +163,14 @@ body {
 .phoneService h3 {
 	width:70px;
 	height:30px;
-	background: url(/app_images/pingan/pa_2017/kehufuwu_bg.png) no-repeat 8px 0;
 	background-size:100px 30px;
 	line-height: 30px;
     font-size: 16px;
     color:#fff;
-    padding-left:38px;
-    border-left: 2px solid #fc6921;
+	padding-left:38px;
+	border-left: 0;
+	background: #FC6921 url(../images/app_bg_su.png) no-repeat 7px center;
+	border-radius: 5px;
 }
 .phoneService .inner {
     margin: 48px auto 0;
@@ -254,7 +252,7 @@ body {
 	vertical-align: -2px;
 	*vertical-align: middle;
 	margin-left: 10px;
-	background: url(/app_images/pingan/pa_2017/icon_01.png) no-repeat;
+	background: url(../images/icon_01_su.png) no-repeat;
 	background-position: 0 -45px;
 }
 .ico_service:hover {
