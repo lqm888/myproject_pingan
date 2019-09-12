@@ -123,7 +123,7 @@ gulp.task('clean', function(){
 
 gulp.task('build', function(){
     // 首先取得dist/*下的所有文件
-    gulp.src('./dist/*')
+    gulp.src('./dist/**/*.*')
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //将dist/*下的所有文件进行压缩打包生成为build.zip文件
