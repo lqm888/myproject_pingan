@@ -78,7 +78,7 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./dist/static/css'));
 });
 
-gulp.task("css",function(){
+gulp.task("reset",function(){
     gulp.src("./app/static/sass/reset.css")
     .pipe(gulp.dest("./dist/static/css"));
 })
@@ -143,7 +143,7 @@ gulp.task('redist', function(){
     //先运行clean，然后并行运行html,js,sass,images,watch
     //如果不使用gulp-run-sequence插件的话，由于gulp是并行执行的
     //有可能会出现一种情况（其他文件处理速度快的已经处理完了，然后clean最后才执行，会把前面处理完的文件删掉，所以要用到runSequence）
-    runSequence('clean', ['html', 'sass', 'js', 'images', 'css'],'watch')
+    runSequence('clean', ['html', 'sass', 'js', 'images','reset'],'watch')
 })
 
 //在终端上输入gulp命令，会默认执行default任务，并执行redist任务
