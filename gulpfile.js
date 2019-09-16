@@ -65,11 +65,12 @@ gulp.task('js', function(){
 
 gulp.task('sass', function(){
     // 取得sass下的所有为.scss的文件（**/的意思是包含所有子文件夹)
-    gulp.src('./app/static/sass/**/*.scss')
+    gulp.src('./app/static/sass/**/*.{scss,css}')
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //编译sass文件使其转换为css文件
     .pipe(sass())
+    
     //合并同一目录下的所有文件,并指定文件名
     .pipe(concat('main.css'))
     //css压缩
@@ -78,10 +79,11 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./dist/static/css'));
 });
 
-gulp.task("reset",function(){
-    gulp.src("./app/static/sass/reset.css")
-    .pipe(gulp.dest("./dist/static/css"));
-})
+// gulp.task("reset",function(){
+//     gulp.src("./app/static/sass/*.css")
+
+//     .pipe(gulp.dest("./dist/static/css"));
+// })
 
 gulp.task('html', function(){
     // 首先取得app/views下的所有为.html的文件（**/的意思是包含所有子文件夹)
@@ -143,7 +145,7 @@ gulp.task('redist', function(){
     //先运行clean，然后并行运行html,js,sass,images,watch
     //如果不使用gulp-run-sequence插件的话，由于gulp是并行执行的
     //有可能会出现一种情况（其他文件处理速度快的已经处理完了，然后clean最后才执行，会把前面处理完的文件删掉，所以要用到runSequence）
-    runSequence('clean', ['html', 'sass', 'js', 'images','reset'],'watch')
+    runSequence('clean', ['html', 'sass', 'js', 'images'],'watch')
 })
 
 //在终端上输入gulp命令，会默认执行default任务，并执行redist任务
