@@ -56,7 +56,7 @@ gulp.task('js', function(){
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //合并同一目录下的所有文件,并指定文件名
-    .pipe(concat('main.js'))
+    // .pipe(concat('main.js'))
     //js压缩
     .pipe(uglify())
     //将合并压缩后的文件输出到dist/static/scripts下（如没有dist目录则自动生成dist）
@@ -65,7 +65,7 @@ gulp.task('js', function(){
 
 gulp.task('sass', function(){
     // 取得sass下的所有为.scss的文件（**/的意思是包含所有子文件夹)
-    gulp.src('./app/static/sass/**/*.{scss,css}')
+    gulp.src('./app/static/sass/{**/*.scss,reset.css}')
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //编译sass文件使其转换为css文件
@@ -79,15 +79,14 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./dist/static/css'));
 });
 
-// gulp.task("reset",function(){
-//     gulp.src("./app/static/sass/*.css")
-
-//     .pipe(gulp.dest("./dist/static/css"));
-// })
+gulp.task('icon',function(){
+    gulp.src("./app/static/sass/iconfont.css")
+    .pipe(gulp.dest("./dist/static/css"));
+})
 
 gulp.task('html', function(){
     // 首先取得app/views下的所有为.html的文件（**/的意思是包含所有子文件夹)
-    gulp.src('./app/views/**/*.html')
+    gulp.src('./app/views/**/*.*')
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //html压缩
@@ -95,6 +94,12 @@ gulp.task('html', function(){
     //将压缩后的文件输出到dist/views下（假如没有dist目录则自动生成dist目录）
     .pipe(gulp.dest('./dist/views'))
 });
+
+gulp.task("data",function(){
+    gulp.src("./app/static/data/**/*.*")
+    .pipe(plumber())
+    .pipe(gulp.dest("./dist/static/data"))
+})
 
 gulp.task('images', function(){
     // 首先取得app/static/images下的所有为.{png,jpg,jpeg,ico,gif,svg}后缀的图片文件（**/的意思是包含所有子文件夹)
@@ -118,7 +123,7 @@ gulp.task('images', function(){
 
 gulp.task('clean', function(){
     // 首先取得dist/*下的所有文件,read: false 返回空值，也就是并不会去读取文件
-    gulp.src('./dist/**/*.*', {read: false})
+    gulp.src('./dist/*', {read: false})
     //删除dist/*下的所有文件
     .pipe(clean())
 })
@@ -139,13 +144,15 @@ gulp.task('watch', function(){
     gulp.watch('./app/static/scripts/**/*.js',['js']);
     gulp.watch('./app/static/sass/**/*.scss',['sass']);
     gulp.watch('./app/views/**/*.html',['html']);
+    gulp.watch("./app/static/data/**/*.*",["data"])
 })
 
 gulp.task('redist', function(){
     //先运行clean，然后并行运行html,js,sass,images,watch
     //如果不使用gulp-run-sequence插件的话，由于gulp是并行执行的
     //有可能会出现一种情况（其他文件处理速度快的已经处理完了，然后clean最后才执行，会把前面处理完的文件删掉，所以要用到runSequence）
-    runSequence('clean', ['html', 'sass', 'js', 'images'],'watch')
+    // runSequence('clean', ['html', 'sass','icon', 'js', 'data'],'watch')
+    runSequence(['html', 'sass','icon', 'js', 'data'],'watch')
 })
 
 //在终端上输入gulp命令，会默认执行default任务，并执行redist任务
