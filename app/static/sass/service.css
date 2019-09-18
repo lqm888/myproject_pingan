@@ -2,9 +2,34 @@ body {
 	background: #ebebeb;
 }
 /* Icon */
-.radioList li i {
+/* .radioList li i {
 	background: url(/app_images/pingan/pa_2017/icon.png) no-repeat;
+} */
+
+/* 面包屑 Start */
+.breadCrumb {
+	width: 1200px;
+	line-height: 46px;
+	font-size: 14px;
+	color: #171717;
+	margin: 0 auto;
 }
+.breadCrumb em {
+	font-size: 16px;
+	font-style: normal;
+}
+.breadCrumb i {
+	padding: 0 8px;
+}
+.breadCrumb a {
+	color: #171717;
+}
+.breadCrumb a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+/* 面包屑 End */
+
 
 .contentWrap {
 	width: 1160px;
@@ -40,96 +65,7 @@ body {
 	padding: 20px 0 0;
 }
 
-/* 微客服 */
-.microService {
-	margin: -10px 0 0 -10px;
-}
-.microService li {
-	float: left;
-	width: 348px;
-	margin: 10px 0 0 10px;
-	padding: 15px;
-	border: 1px #e5e5e5 solid;
-	border-radius: 3px;
-}
-.microService li:hover {
-	border-color: #ffb997
-}
-.microService li img {
-	display: block;
-	float: left;
-	width: 100px;
-	height: 100px;
-}
-.microService .weChat {
-	margin-left: 115px;
-	line-height: 18px;
-}
-.microService .weChat h4, .microService .weChat h5 {
-	font-weight: normal;
-}
-.microService .weChat h3 {
-	line-height: 26px;
-	font-size: 18px;
-	color: #f60;
-	font-weight: bold;
-	padding: 0 0 10px;
-}
-.microService .weChat h4 {
-	font-size: 12px;
-	color: #666
-}
-.microService .weChat h5 {
-	font-size: 14px;
-	color: #171717
-}
-
-/* APP */
-.appArea {
-	margin-top: -15px;
-	overflow: hidden;
-}
-.appArea li {
-	float: left;
-	width: 270px;
-	padding: 20px 20px 20px 0;
-	border-bottom: 1px #e5e5e5 solid;
-	margin-bottom: -1px;
-}
-.appArea li a {
-	display: inline-block;
-	width: auto;
-	height: 60px;
-}
-.appArea li a:hover {
-	text-decoration: none;
-}
-.appArea li img {
-	display: block;
-	float: left;
-	width: 60px;
-	height: 60px;
-}
-.appArea li .desc {
-	margin-left: 75px;
-}
-.appArea li h3 {
-	line-height: 24px;
-	font-size: 18px;
-	color: #f60;
-	font-weight: bold;
-	padding: 5px 0;
-}
-.appArea li h3:hover {
-	text-decoration: underline;
-}
-.appArea li p {
-	line-height: 24px;
-	font-size: 12px;
-	color: #666;
-}
-
-/* 电话客服 */
+/* 联系我们 电话客服 */
 .phoneService {
 	padding: 10px 0 0;
 	position: relative;
@@ -211,6 +147,109 @@ body {
 .branchPhoneArea dd {
 	margin-left: 110px;
 }
+.ico_service {
+	display: inline-block;
+	width: 20px;
+	height: 22px;
+	text-indent: -999em;
+	vertical-align: -2px;
+	*vertical-align: middle;
+	margin-left: 10px;
+	background: url(../images/icon_01_su.png) no-repeat;
+	background-position: 0 -45px;
+}
+.ico_service:hover {
+	background-position: 0 -70px;
+}
+/* 微客服 */
+.microService {
+	margin: -10px 0 0 -10px;
+}
+.microService li {
+	float: left;
+	width: 348px;
+	margin: 10px 0 0 10px;
+	padding: 15px;
+	border: 1px #e5e5e5 solid;
+	border-radius: 3px;
+}
+.microService li:hover {
+	border-color: #ffb997
+}
+.microService li img {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.microService .weChat {
+	margin-left: 115px;
+	line-height: 18px;
+}
+.microService .weChat h3 {
+	line-height: 26px;
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	padding: 0 0 10px;
+}
+.microService .weChat h4 {
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+.microService .weChat h5 {
+	font-weight: normal;
+	font-size: 14px;
+	color: #171717;
+}
+
+/* APP */
+.appArea {
+	margin-top: -15px;
+	overflow: hidden;
+}
+.appArea li {
+	float: left;
+	width: 270px;
+	padding: 20px 20px 20px 0;
+	border-bottom: 1px #e5e5e5 solid;
+	margin-bottom: -1px;
+}
+.appArea li a {
+	display: inline-block;
+	width: auto;
+	height: 60px;
+}
+.appArea li a:hover {
+	text-decoration: none;
+}
+.appArea li img {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.appArea li .desc {
+	margin-left: 75px;
+}
+.appArea li h3 {
+	line-height: 24px;
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.appArea li h3:hover {
+	text-decoration: underline;
+}
+.appArea li p {
+	line-height: 24px;
+	font-size: 12px;
+	color: #666;
+}
+
+
 
 /* 服务网点 */
 .serviceNetwork {
@@ -244,23 +283,10 @@ body {
 	color: #fc6921;
 	text-decoration: underline;
 }
-.ico_service {
-	display: inline-block;
-	width: 20px;
-	height: 22px;
-	text-indent: -999em;
-	vertical-align: -2px;
-	*vertical-align: middle;
-	margin-left: 10px;
-	background: url(../images/icon_01_su.png) no-repeat;
-	background-position: 0 -45px;
-}
-.ico_service:hover {
-	background-position: 0 -70px;
-}
+
 
 /* 留言反馈 */
-.feedBack {
+/* .feedBack {
 	padding: 10px 0 20px
 }
 .feedBack dl {
@@ -309,8 +335,7 @@ body {
 .radioList .select i {
 	background-position: 0 -125px;
 }
-.iptArea {
-}
+
 .province, .citys, .otherCity  {
 	float: left;
 	margin-right: 15px;
@@ -401,5 +426,5 @@ body {
 	text-decoration: none;
 	background: #f30;
 }
-
+ */
 
