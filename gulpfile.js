@@ -86,7 +86,7 @@ gulp.task('icon',function(){
 
 gulp.task('html', function(){
     // 首先取得app/views下的所有为.html的文件（**/的意思是包含所有子文件夹)
-    gulp.src('./app/views/**/*.*')
+    gulp.src('./app/views/**/')
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //html压缩
