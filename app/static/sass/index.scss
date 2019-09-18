@@ -771,6 +771,18 @@
                                     right:0;
                                     top:0;
                                 }
+                                .rl,.rr{
+                                    float: left;
+                                    width:58px;
+                                    height:24px;
+                                    border: 1px solid #ededed;
+                                    font-size: 14px;
+                                    line-height:24px;
+                                }
+                                .rl{
+                                    margin-right:10px;
+                                    
+                                }
                             }
                         }
                     }
