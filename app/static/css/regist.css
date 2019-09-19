@@ -26,41 +26,46 @@ body {
     top: 20px;
     width: 210px;
     height: 30px; }
-  .top .phone {
-    position: absolute;
-    border-right: 2px solid #e0d6ce;
-    padding: 0 39px 0 0;
+  .top .bottom {
+    width: 1000px;
     height: 80px;
-    margin-top: 99px;
-    left: 150px;
-    bottom: 20px; }
-  .top .txt {
-    height: 72px;
     position: absolute;
-    bottom: 27px;
-    right: 320px;
-    color: #ffffff;
-    pointer-events: none; }
-    .top .txt p {
-      font-size: 14px;
-      line-height: 24px; }
-  .top .ewm {
-    position: absolute;
-    right: 180px;
-    bottom: 20px; }
-    .top .ewm img {
-      width: 80px;
-      height: 80px; }
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+    overflow: hidden; }
+    .top .bottom .phone {
+      border-right: 2px solid #e0d6ce;
+      padding: 0 40px 0 0;
+      float: left;
+      margin-right: 40px; }
+    .top .bottom .txt {
+      height: 72px;
+      float: left;
+      color: #ffffff;
+      pointer-events: none; }
+      .top .bottom .txt p {
+        font-size: 14px;
+        line-height: 17px; }
+    .top .bottom .ewm {
+      float: left;
+      margin-left: 40px; }
+      .top .bottom .ewm img {
+        width: 80px;
+        height: 80px; }
   .top .main {
     width: 700px;
     height: 400px;
-    background: #fff url(../images/registbg.png) no-repeat right bottom;
+    background: #fff url(../images/pic_su/registbg.png) no-repeat right bottom;
     background-size: 300px 300px;
     border-radius: 8px;
     padding: 52px 0 48px 120px;
     position: absolute;
-    left: 310px;
+    left: 0;
     top: 90px;
+    right: 0;
+    margin: auto;
     box-sizing: border-box; }
     .top .main .statictxt {
       width: 470px;

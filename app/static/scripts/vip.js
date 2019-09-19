@@ -1,3 +1,7 @@
+$('.head').load('./publichead.html',function(){
+    $.getScript('../static/scripts/publichead.js');
+});
+$('.footer').load('./footer.html');
 $(".four1").hover(
     function () {
         $(this).find(".icon").removeClass("f").addClass("f1").next().addClass('on');

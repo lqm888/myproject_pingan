@@ -36,58 +36,72 @@ body {
         height: 30px;
     }
 
-    .phone {
-        position: absolute;
-        border-right: 2px solid #e0d6ce;
-        padding: 0 39px 0 0;
+    .bottom {
+        width: 1000px;
         height: 80px;
-        margin-top: 99px;
-        left: 150px;
-        bottom: 20px;
-    }
-
-    .txt {
-        // width: 
-        height: 72px;
         position: absolute;
-        bottom: 27px;
-        right: 320px;
-        color: #ffffff;
-        pointer-events: none;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        margin: auto;
+        overflow: hidden;
 
-        p {
-            font-size: 14px;
-            line-height: 24px;
-
+        .phone {
+            // position: absolute;
+            border-right: 2px solid #e0d6ce;
+            padding: 0 40px 0 0;
+            float: left;
+            margin-right: 40px;
+            // height: 80px;
+            // margin-top: 99px;
+            // left: 150px;
+            // bottom: 0;
         }
-    }
 
-    .ewm {
-        position: absolute;
-        right: 180px;
-        bottom: 20px;
+        .txt {
+            height: 72px;
+            float: left;
+            // position: absolute;
+            // bottom: 0;
+            // right: 320px;
+            color: #ffffff;
+            pointer-events: none;
 
-        img {
-            width: 80px;
-            height: 80px;
+            p {
+                font-size: 14px;
+                line-height: 17px;
+
+            }
+        }
+
+        .ewm {
+            // position: absolute;
+            // right: 180px;
+            // bottom: 0;
+            float: left;
+            margin-left: 40px;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
         }
     }
 
     .main {
         width: 700px;
         height: 400px;
-        background: #fff url(../images/registbg.png) no-repeat right bottom;
+        background: #fff url(../images/pic_su/registbg.png) no-repeat right bottom;
         background-size: 300px 300px;
         border-radius: 8px;
         padding: 52px 0 48px 120px;
         position: absolute;
-        left: 310px;
+        left: 0;
         top: 90px;
+        right: 0;
+        margin: auto;
         box-sizing: border-box;
-        form{
-            
-        }
-        // pointer-events: none;
+
         .statictxt {
             width: 470px;
             font-size: 20px;

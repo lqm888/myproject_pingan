@@ -2,17 +2,12 @@ var cvs = document.querySelector('.cvs'); //画纸
 var ctx = cvs.getContext('2d'); //画笔
 
 var img = new Image();
-img.src = '../static/images/canv.png';
+img.src = '../static/images/pic_su/canv.png';
 
 img.onload = function () {
     ctx.beginPath();
     ctx.drawImage(img, 0, 0, 150, 50);
-
-
-
     ctx.closePath();
-
-
 }
 
 function randomCode(n) {

@@ -1,10 +1,6 @@
 body {
 	background: #ebebeb;
 }
-/* Icon */
-/* .radioList li i {
-	background: url(/app_images/pingan/pa_2017/icon.png) no-repeat;
-} */
 
 /* 面包屑 Start */
 .breadCrumb {
@@ -90,7 +86,7 @@ body {
 	position: absolute;
 	width: 136px ;
 	height: 162px;
-	background: url(../images/qrcode_app_su.png) no-repeat 0 0;
+	background: url(../images/pic_su/qrcode_app_su.png) no-repeat 0 0;
 }
 .qrcodeAppBox img {
 	width: 105px;
@@ -105,7 +101,7 @@ body {
     color:#fff;
 	padding-left:38px;
 	border-left: 0;
-	background: #FC6921 url(../images/app_bg_su.png) no-repeat 7px center;
+	background: #FC6921 url(../images/pic_su/app_bg_su.png) no-repeat 7px center;
 	border-radius: 5px;
 }
 .phoneService .inner {
@@ -155,7 +151,7 @@ body {
 	vertical-align: -2px;
 	*vertical-align: middle;
 	margin-left: 10px;
-	background: url(../images/icon_01_su.png) no-repeat;
+	background: url(../images/pic_su/icon_01_su.png) no-repeat;
 	background-position: 0 -45px;
 }
 .ico_service:hover {
@@ -284,147 +280,4 @@ body {
 	text-decoration: underline;
 }
 
-
-/* 留言反馈 */
-/* .feedBack {
-	padding: 10px 0 20px
-}
-.feedBack dl {
-	padding: 0 0 20px
-}
-.feedBack dt {
-	float: left;
-	width: 165px;
-	line-height: 30px;
-	font-size: 14px;
-	color: #666;
-	text-align: right;
-}
-.feedBack dt em {
-	font-style: normal;
-	color: #f60;
-	padding: 0 5px 0 0
-}
-.feedBack dd {
-	margin-left: 180px;
-}
-.radioList li {
-	float: left;
-	width: 60px;
-	line-height: 30px;
-	font-size: 14px;
-	color: #171717;
-	margin-right: 15px;
-	cursor: pointer;
-}
-.radioList.type {
-	width: 600px;
-}
-.radioList.type li {
-	width: 100px;
-}
-.radioList li i {
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	margin-right: 8px;
-	vertical-align: -4px;
-	*vertical-align: 0;
-	background-position: 0 -100px;
-}
-.radioList .select i {
-	background-position: 0 -125px;
-}
-
-.province, .citys, .otherCity  {
-	float: left;
-	margin-right: 15px;
-}
-.province .ui-ipt, .citys .ui-ipt {
-	width: 90px;
-	padding: 5px 25px 5px 5px
-}
-.otherCity em {
-	float: left;
-	line-height: 30px;
-	font-size: 14px;
-	color: #666;
-	font-style: normal;
-}
-.ui-textarea {
-	width: 550px;
-	height: 110px;
-	line-height: 18px;
-	font-size: 14px;
-	color: #171717;
-	border: 1px solid #d2d2d2;
-	padding: 5px;
-}
-.ui-ipt {
-	display: inline-block;
-	width: 170px;
-	height: 18px;
-	line-height: 18px;
-	font-size: 14px;
-	color: #171717;
-	border: 1px solid #d2d2d2;
-	padding: 5px;
-}
-.zoneCode {
-	width: 48px;
-}
-.phoneNum {
-	width: 98px;
-}
-.dash {
-	float: left;
-	width: 12px;
-	font-style: normal;
-	line-height: 30px;
-	font-size: 12px;
-	color: #666;
-	text-align: center;
-}
-.hint {
-	float: left;
-	line-height: 30px;
-	font-size: 12px;
-	color: #666;
-	padding: 0 10px;
-}
-.validatecode {
-	float: left;
-	width: 70px;
-	height: 30px;
-	margin-left: 10px;
-}
-.reloadCode {
-	float: left;
-	line-height: 30px;
-	font-size: 14px;
-	color: #f60;
-	text-decoration: underline;
-	margin-left: 10px;
-}
-.reloadCode:hover {
-	color: #f60;
-	text-decoration: none;
-}
-.btnSubmit {
-	display: block;
-	width: 120px;
-	height: 40px;
-	line-height: 40px;
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-	border-radius: 2px;
-	background: #f60;
-}
-.btnSubmit:hover {
-	color: #fff;
-	text-decoration: none;
-	background: #f30;
-}
- */
 
