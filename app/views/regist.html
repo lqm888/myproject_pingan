@@ -33,36 +33,31 @@
         <div class="ewm">
             <img src="../static/images/下载3.png" alt="">
         </div>
+        <div class="main">
+            <form action="">
 
-        <form action="">
-            <p class="statictxt">欢迎注册一账通</p>
-            <div class="input-group">
-                <span>用户名</span>
-                <input type="text" placeholder="请输入用户名" name="user" required="true" rangelength="6,18">
-            </div>
-            <div class="input-group">
-                <span>密码</span>
-                <input type="password" placeholder="请输入密码" name="pass" required="true" rangelength="6,12">
-            </div>
-            <div class="input-group">
-                <span>手机号</span>
-                <input type="text" placeholder="请输入手机号" name="phone" required="true" digits="true" rangelength="7,11">
-            </div>
-            <div class="input-group">
-                <span>邮箱</span>
-                <input type="text" placeholder="请输入邮箱" name="email" required="true" email="true">
-            </div>
-            <!-- <div class="test">
-                <div class="left">
-                    <canvas width="150" height="50">
-
-                    </canvas>
+                <p class="statictxt">欢迎注册一账通</p>
+                <div class="input-group">
+                    <span>用户名</span>
+                    <input class="user" type="text" placeholder="请输入用户名" name="user" required="true" rangelength="3,10">
                 </div>
-                <input type="text" class="testtxt" placeholder="请输入验证码">
+                <div class="input-group">
+                    <span>密码</span>
+                    <input class="pass" type="password" placeholder="请输入密码" name="pass" required="true" rangelength="6,12">
+                </div>
+                <div class="input-group">
+                    <span>手机号</span>
+                    <input class="num" type="text" placeholder="请输入手机号" name="phone" required="true" digits="true"
+                        rangelength="7,11">
+                </div>
+                <div class="input-group">
+                    <span>邮箱</span>
+                    <input class="email" type="text" placeholder="请输入邮箱" name="email" required="true" email="true">
+                </div>
+                <button class="regist">点击注册</button>
+            </form>
 
-            </div> -->
-            <button class="regist">点击注册</button>
-        </form>
+        </div>
     </div>
 
 
@@ -70,12 +65,12 @@
     <script src="../static/scripts/jquery.js"></script>
     <script src="../static/scripts/jquery.validate.js"></script>
     <script src="../static/scripts/jquery.validate.messages_zh.js"></script>
-    <!-- <script src="../static/scripts/regist.js"></script> -->
+    <script src="../static/scripts/ajax.js"></script>
+    <script src="../static/scripts/regist.js"></script>
     <script>
-    $('form').validate({
-    debug: true
-    });
-
+        $('form').validate({
+            debug: true
+        });
     </script>
 </body>
 

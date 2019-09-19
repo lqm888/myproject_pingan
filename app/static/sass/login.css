@@ -1,7 +1,8 @@
 html,
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .top {
   width: 100%;
@@ -136,8 +137,24 @@ body {
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
         outline-offset: -2px; }
+      .top .main .test .change {
+        cursor: pointer;
+        margin: 5px 84px 0 5px;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none; }
+      .top .main .test .change:hover {
+        color: #ff2741; }
+      .top .main .test .no {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none; }
     .top .main .login {
-      margin-top: 30px;
+      margin-top: 15px;
       margin-bottom: 10px;
       width: 100%;
       font-size: 22px;

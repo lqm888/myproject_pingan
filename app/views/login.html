@@ -35,15 +35,15 @@
         </div>
 
         <div class="main">
-            <p class="statictxt">手机号登录</p>
+            <p class="statictxt">一账通用户登录</p>
             <div class="input-group">
-                <span>+86</span>
-                <input type="text" placeholder="请输入登录手机号">
+                <span>用户名</span>
+                <input class="user" name="user" type="text" placeholder="请输入登录用户名">
             </div>
             <div class="input-group">
-                    <span>密码</span>
-                    <input type="text" placeholder="请输入登录密码">
-                </div>
+                <span>密码</span>
+                <input class="pass" name="pass" type="password" placeholder="请输入登录密码">
+            </div>
             <div class="test">
                 <div class="left">
                     <div class="yanztxt">
@@ -57,7 +57,7 @@
 
                 </div>
                 <input type="text" class="testtxt" placeholder="请输入验证码">
-
+                <span class="change">看不清？换一张</span><span class="no">不区分大小写</span>
             </div>
             <button class="login">登录</button>
             <a href="./regist.html" target="_blank">小主还没有账号吗？赶快戳我注册一个吧！</a>
@@ -67,6 +67,7 @@
 
     </div>
     <script src="../static/scripts/jquery.js"></script>
+    <script src="../static/scripts/ajax.js"></script>
     <script src="../static/scripts/login.js"></script>
 </body>
 

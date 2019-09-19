@@ -2,6 +2,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .top {
@@ -92,7 +93,8 @@ body {
         }
 
         .input-group {
-            margin-top: 20px;   
+            margin-top: 20px;
+
             span {
                 display: block;
                 float: left;
@@ -130,12 +132,13 @@ body {
             }
         }
 
-        .test{
+        .test {
             width: 285px;
             margin: 25px auto 0;
             box-sizing: border-box;
             margin-top: 30px;
-            .left{
+
+            .left {
                 display: inline-block;
                 // float: left;
                 width: 150px;
@@ -144,7 +147,8 @@ body {
                 vertical-align: middle;
                 border-radius: 2px;
                 position: relative;
-                .yanztxt{
+
+                .yanztxt {
                     // position: absolute;
                     // left: 0;
                     // top: 0;
@@ -153,18 +157,20 @@ body {
                     font-size: 25px;
                     text-align: center;
                     line-height: 50px;
-                    letter-spacing:8px;
+                    letter-spacing: 8px;
                     font-style: italic;
 
                 }
-                .canvaspic{
+
+                .canvaspic {
                     position: absolute;
                     left: 0;
-                    top:0;
+                    top: 0;
                     z-index: 3;
                 }
             }
-            .testtxt{
+
+            .testtxt {
                 display: inline-block;
                 border: 1px solid #ccc;
                 border-radius: 6px;
@@ -175,15 +181,39 @@ body {
                 width: 110px;
                 vertical-align: middle;
             }
-            .testtxt:focus{
+
+            .testtxt:focus {
                 border-color: #66afe9;
                 -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
                 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
                 outline-offset: -2px;
             }
+
+            .change {
+                cursor: pointer;
+                margin: 5px 84px 0 5px;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                -khtml-user-select: none;
+                user-select: none;
+            }
+
+            .change:hover {
+                color: #ff2741;
+            }
+
+            .no {
+                -moz-user-select: none; 
+                -webkit-user-select: none; 
+                -ms-user-select: none; 
+                -khtml-user-select: none; 
+                user-select: none;
+            }
         }
-        .login{
-            margin-top: 30px;
+
+        .login {
+            margin-top: 15px;
             margin-bottom: 10px;
             width: 100%;
             font-size: 22px;
@@ -191,14 +221,15 @@ body {
             font-weight: 500;
             color: #fff;
             line-height: 32px;
-            background: linear-gradient(47deg,#ff2741,#ff7e8d);
+            background: linear-gradient(47deg, #ff2741, #ff7e8d);
             border-radius: 34px;
             padding: 8px 32px;
             box-sizing: border-box;
             text-align: center;
             border: none;
         }
-        a{
+
+        a {
             text-align: center;
             margin-left: 14px;
         }

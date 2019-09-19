@@ -73,7 +73,7 @@ body {
         }
     }
 
-    form {
+    .main {
         width: 700px;
         height: 400px;
         background: #fff url(../images/registbg.png) no-repeat right bottom;
@@ -84,7 +84,9 @@ body {
         left: 310px;
         top: 90px;
         box-sizing: border-box;
-
+        form{
+            
+        }
         // pointer-events: none;
         .statictxt {
             width: 470px;

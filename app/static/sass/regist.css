@@ -51,7 +51,7 @@ body {
     .top .ewm img {
       width: 80px;
       height: 80px; }
-  .top form {
+  .top .main {
     width: 700px;
     height: 400px;
     background: #fff url(../images/registbg.png) no-repeat right bottom;
@@ -62,14 +62,14 @@ body {
     left: 310px;
     top: 90px;
     box-sizing: border-box; }
-    .top form .statictxt {
+    .top .main .statictxt {
       width: 470px;
       font-size: 20px;
       color: #293134;
       text-align: center; }
-    .top form .input-group {
+    .top .main .input-group {
       margin-top: 15px; }
-      .top form .input-group span {
+      .top .main .input-group span {
         display: block;
         float: left;
         width: 70px;
@@ -79,7 +79,7 @@ body {
         border-bottom-left-radius: 8px;
         line-height: 38px;
         text-align: center; }
-      .top form .input-group input {
+      .top .main .input-group input {
         float: left;
         outline: 0;
         color: #555;
@@ -93,24 +93,24 @@ body {
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         margin-left: -1px;
         text-indent: 20px; }
-      .top form .input-group input:focus {
+      .top .main .input-group input:focus {
         border-color: #66afe9;
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
         outline-offset: -2px; }
-    .top form .test {
+    .top .main .test {
       width: 285px;
       margin: 25px auto 0;
       box-sizing: border-box;
       margin-top: 30px; }
-      .top form .test .left {
+      .top .main .test .left {
         display: inline-block;
         width: 150px;
         height: 50px;
         border: 1px solid #ccc;
         vertical-align: middle;
         border-radius: 2px; }
-      .top form .test .testtxt {
+      .top .main .test .testtxt {
         display: inline-block;
         border: 1px solid #ccc;
         border-radius: 6px;
@@ -120,12 +120,12 @@ body {
         height: 40px;
         width: 110px;
         vertical-align: middle; }
-      .top form .test .testtxt:focus {
+      .top .main .test .testtxt:focus {
         border-color: #66afe9;
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
         outline-offset: -2px; }
-    .top form .regist {
+    .top .main .regist {
       margin: 30px 0 10px 135px;
       width: 200px;
       font-size: 22px;
@@ -139,9 +139,9 @@ body {
       box-sizing: border-box;
       text-align: center;
       border: none; }
-    .top form input.error {
+    .top .main input.error {
       border: 1px solid red; }
-    .top form label.error {
+    .top .main label.error {
       color: red; }
 
 /*# sourceMappingURL=regist.css.map */
