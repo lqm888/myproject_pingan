@@ -4,23 +4,26 @@ require.config({
     paths: {
         'aj':'ajax',
         'jquery':['http://libs.baidu.com/jquery/2.0.3/jquery','jquery'],
+        'banner':"banner",
+        'celan': 'celan',
+        'publichead':'publichead',
+        'dk':'dk'
     }
 });
-// require(['aj','jquery'],function(aj,$){
-//     var timer1 = '';
-//     var num = 0;
-//     console.log(aj['a']);
-//     console.log(aj['jso']);
-// })
 
 require(['jquery'],function($){
+    $(".header").load('./publichead.html',function(){
+        require(['publichead']);
+    })
+})
+
+require(['jquery','banner'],function($,move){
     if(typeof Worker !== undefined){
         // alert("支持多线程");
         var worker = new Worker('../static/scripts/worker.js');
         worker.postMessage("ajax");
         worker.onmessage = function(event){
             var json = JSON.parse(event.data);
-            ;
             for(var i=0; i<json.length; i++){
                 var $newLi = $('<li>'+
                 '<a href="#">'+
@@ -36,31 +39,45 @@ require(['jquery'],function($){
 
             $(".imgWarp ul").find("li").eq(0).show().siblings().hide();
             $(".mid .navlist").find("span").eq(0).addClass("active").siblings().removeClass("active");
-            autoMove();
+
+            // autoMove();
+            move["move"].num = 0;
+            move["move"].init();
 
             $(".navlist span").on("mouseover",function(){
-                $(".imgWarp ul").find("li").eq($(this).index()).fadeIn().siblings().fadeOut();
-                $(".mid .navlist").find("span").eq($(this).index()).addClass("active").siblings().removeClass("active");
+                move["move"].num = $(this).index();
+                move["move"].change();
+            });
+            $(".navlist span").on("mouseout",function(){
+                move["move"].num = $(this).index();
+                move["move"].auto();
+            });
+
+            $(".imgWarp .left").on("click",function(){
+                move["move"].toleft();
+            })
+
+            $(".imgWarp .right").on("click",function(){
+                move["move"].toright();
             })
         }
     }else{
         alert('不支持多线程');
     }
-
-    
 })
 
+require(['jquery','dk'],function(){
 
+})
 
-function autoMove(){
-    var num = 0;
-    timer1 = setInterval(function(){
-        num++;
-        if(num >= $(".imgWarp li").length){
-            num = 0;
+require(['jquery','celan'],function($,mtop){
+    $(".nav_cebian").on("click","li",function(){
+        if($(this).attr("to")){
+            var tag = '.' + $(this).attr("to");
+            var dom = document.querySelector(tag);
+            var totop = mtop['moveTop'].getoffet(dom).top;
+            mtop['moveTop'].top = totop;
+            mtop['moveTop'].move();
         }
-        $(".imgWarp ul").find("li").eq(num).fadeIn().siblings().fadeOut();
-        $(".mid .navlist").find("span").eq(num).addClass("active").siblings().removeClass("active");
-    },2000)
-}
-
+    })
+})

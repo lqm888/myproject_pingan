@@ -65,14 +65,14 @@ gulp.task('js', function(){
 
 gulp.task('sass', function(){
     // 取得sass下的所有为.scss的文件（**/的意思是包含所有子文件夹)
-    gulp.src('./app/static/sass/{**/*.scss,reset.css}')
+    gulp.src('./app/static/sass/**/*.scss')
     //错误管理模块（有错误时会自动输出提示到终端上）
     .pipe(plumber())
     //编译sass文件使其转换为css文件
     .pipe(sass())
     
     //合并同一目录下的所有文件,并指定文件名
-    .pipe(concat('main.css'))
+    // .pipe(concat('main.css'))
     //css压缩
     .pipe(minifyCss())
     //将合并压缩后的文件输出到dist/static/css下（假如没有dist目录则自动生成dist目录）
