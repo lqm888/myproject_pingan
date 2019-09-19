@@ -11,7 +11,6 @@ define(['jquery'], function($) {
             $(".dk .listWarp .count_after").show();
             $('.count_after .limit strong').html(val);
         }else{
-            $("option[value=0]").attr("selected")
             $(".dk .listWarp .count .tips").show();
             setTimeout(function(){
                 $(".dk .listWarp .count .tips").hide();
@@ -20,6 +19,8 @@ define(['jquery'], function($) {
     })
 
     $(".dk .listWarp .again").on("click",function(){
+        $(".inc option[value='0']")[0].selected = true;
+
         $(".dk .listWarp .count_after").hide();
         $(".dk .listWarp .count").show();
     })

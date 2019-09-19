@@ -7,8 +7,9 @@ define(['jquery'],function(){
             clearInterval(this.timer);
             this.timer = setInterval(function(){
                 var nowTop = $(window).scrollTop();
-                var speed = (_this.top - nowTop)/10;
+                var speed = (_this.top - nowTop)/5;
                 speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                
                 if (Math.abs(nowTop - _this.top) <= Math.abs(speed)) {
                     _this.clean();
                     $(window).scrollTop(_this.top);

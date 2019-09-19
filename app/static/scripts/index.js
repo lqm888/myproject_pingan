@@ -13,8 +13,13 @@ require.config({
 
 require(['jquery'],function($){
     $(".header").load('./publichead.html',function(){
+        // $.getScript("../static/scripts/publichead.js")
         require(['publichead']);
     })
+})
+
+require(['jquery'],function($){
+    $(".footer").load('./footer.html');
 })
 
 require(['jquery','banner'],function($,move){

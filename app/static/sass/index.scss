@@ -1309,7 +1309,9 @@
 
 .nav_cebian{
     position: fixed;
-    top:168px;
+    top:0;
+    bottom:0;
+    margin:auto;
     right:5px;
     height: 400px;
     width:50px;
