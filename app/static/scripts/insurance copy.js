@@ -13,10 +13,7 @@ require(['jquery','ConverImg','fixed'],function ($,c){
         require(["publichead"]);
     });
 
-    $('#foot').load('./footer.html');
-
     c.ConverImg.init();
-
 
     $('.aside-left ul').on('mouseenter','li',function (){
         $(this).find('.safe').show();
@@ -31,6 +28,7 @@ require(['jquery','ConverImg','fixed'],function ($,c){
         $(this).removeClass('show');
         $(this).find('i').css('backgroundPositionX','0');
     });
+    
     
 
 

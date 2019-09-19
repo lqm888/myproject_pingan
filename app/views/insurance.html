@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>平安保险</title>
-<link rel="stylesheet" href="../static/sass/iconfont.css">
-<link rel="stylesheet" href="../static/sass/reset.css">
-<link rel="stylesheet" href="../static/sass/insurance.css">
+<link rel="stylesheet" href="../static/css/iconfont.css">
+<link rel="stylesheet" href="../static/css/reset.css">
+<link rel="stylesheet" href="../static/css/insurance.css">
 </head>
 <body>
-<div class="loginbar_r">
+<div id="head"></div>
+<!-- <div class="loginbar_r">
     <div class="main">
         <div class="welcome_r">
             <p>欢迎访问平安官网</p>
@@ -20,10 +21,104 @@
         </div>
         <ul>
             <li><a href="#"><span class="iconfont">&#xe635;</span>APP下载</a></li>
-            <li><a href="#"><span class="iconfont">&#xe7e5;</span>关注微信</a></li>
+            <li>
+                <a href="#"><span class="iconfont">&#xe7e5;</span>关注微信</a>
+                <div class="qrcode">
+                    <img src="../static/images/025_r.jpg" alt="">
+                    <p>平安官网微信公众号</p>
+                </div>
+            </li>
             <li><a href="#"><span class="iconfont">&#xe658;</span>客户服务</a></li>
-            <li><a href="#">网站地图<span class="iconfont">&#xe629;</span></a></li>
-            <li><a href="#">集团APP大全</a></li>
+            <li>
+                <a href="#">网站地图<span class="iconfont">&#xe629;</span></a>
+                <div class="webmap">
+                    <div class="webmap-left">
+                        <h4>集团官网</h4>
+                        <div class="mapline"></div>
+                        <ol>
+                            <li><a href="#">关于平安</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">企业社会责任</a></li>
+                            <li><a href="#">平安新闻</a></li>
+                            <li><a href="#">平安研究</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                        </ol>
+                        <ol>
+                            <li><a href="#">平安VIP</a></li>
+                            <li><a href="#">集团APP大全</a></li>
+                            <li><a href="#">公众号大全</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <h4>电商网站</h4>
+                        <div class="mapline"></div>
+                        <ol>
+                            <li><a href="#">关于平安</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">企业社会责任</a></li>
+                            <li><a href="#">平安新闻</a></li>
+                            <li><a href="#">平安研究</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <h4>电商网站</h4>
+                        <div class="mapline"></div>
+                        <ol>
+                            <li><a href="#">关于平安</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">企业社会责任</a></li>
+                            <li><a href="#">平安新闻</a></li>
+                            <li><a href="#">平安研究</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <h4>银行</h4>
+                        <div class="mapline"></div>
+                        <ol>
+                            <li><a href="#">平安银行</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <h4>投资</h4>
+                        <div class="mapline"></div>
+                        <ol>
+                            <li><a href="#">平安银行</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">企业社会责任</a></li>
+                            <li><a href="#">平安新闻</a></li>
+                            <li><a href="#">平安研究</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <ol style="margin-top: 50px;">
+                            <li><a href="#">平安资产管理</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <h4>科技业务</h4>
+                        <div class="mapline"></div>
+                        <ol>
+                            <li><a href="#">平安银行</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">企业社会责任</a></li>
+                            <li><a href="#">平安新闻</a></li>
+                            <li><a href="#">平安研究</a></li>
+                        </ol>
+                    </div>
+                    <div class="webmap-right">
+                        <ol style="margin-top: 50px;">
+                            <li><a href="#">平安科技</a></li>
+                            <li><a href="#">平安医疗健康管理</a></li>
+                            <li><a href="#">平安金服</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </li>
+            <li style="border-right: 1px solid #f2f2f2;"><a href="#">集团APP大全</a></li>
         </ul>
     </div>
 </div>
@@ -34,9 +129,29 @@
         </div>
         <ul>
             <li><a href="#">首页</a></li>
-            <li><a href="#">理财</a></li>
+            <li class="wealthbox">
+                <a href="#">理财</a>
+                <div class="wealth">
+                    <div class="box">
+                        <a href="#"><img src="../static/images/003_r.png" alt=""></a>
+                        <a href="#"><img src="../static/images/004_r.png" alt=""></a>
+                        <a href="#"><img src="../static/images/005_r.png" alt=""></a>
+                        <a href="#"><img src="../static/images/006_r.png" alt=""></a>
+                    </div>
+                </div>
+            </li>
             <li><a href="#">贷款</a></li>
-            <li><a href="#">保险</a></li>
+            <li class="insurbox">
+                <a href="#">保险</a>
+                <div class="insur">
+                    <div class="box">
+                        <a href="#"><img src="../static/images/007_r.png" alt=""></a>
+                        <a href="#"><img src="../static/images/008_r.png" alt=""></a>
+                        <a href="#"><img src="../static/images/009_r.png" alt=""></a>
+                        <a href="#"><img src="../static/images/010_r.png" alt=""></a>
+                    </div>
+                </div>
+            </li>
             <li><a href="#">信用卡</a></li>
             <li><a href="#">920专区</a></li>
         </ul>
@@ -48,18 +163,438 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div class="content_r">
     <div class="main">
         <div class="aside-left">
+            <ul>
+                <li>
+                    <a href="#"><i></i>健康险</a>
+                    <div class="safe">
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>健康险</h4>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <div class="safe-nav">
+                            <a href="#">少儿健康</a>
+                            <a href="#">成人健康</a>
+                            <a href="#">老人健康</a>
+                            <a href="#">女性保险</a>
+                        </div>
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>特别推荐</h4>
+                        </div>
+                        <div class="safebox">
+                            <div class="safebox-left">
+                                <em>特别推荐</em>
+                                <h3>E生康重疾无忧</h3>
+                                <h5>轻松享600万医疗保障</h5>
+                                <p>一般医疗保险金</p>
+                                <p>恶性肿瘤保险金</p>
+                            </div>
+                            <div class="safebox-right">
+                                <p>平安健康</p>
+                                <h2>159元/起</h2>
+                                <a href="#">立即投保</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             
+                <li>
+                    <a href="#"><i></i>意外险</a>
+                    <div class="safe">
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>意外险</h4>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <div class="safe-nav">
+                            <a href="#">交通意外</a>
+                            <a href="#">人身意外</a>
+                        </div>
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>特别推荐</h4>
+                        </div>
+                        <div class="safebox">
+                            <div class="safebox-left">
+                                <em>特别推荐</em>
+                                <h3>平安个人意外伤害险</h3>
+                                <h5>工作生活出行365天全方位呵护</h5>
+                                <p>意外身故,伤残</p>
+                                <p>意外医疗</p>
+                                <p>住院误工津贴</p>
+                            </div>
+                            <div class="safebox-right">
+                                <p>平安产险</p>
+                                <h2>34元/起</h2>
+                                <a href="#">立即投保</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li>
+                    <a href="#"><i></i>寿险</a>
+                    <div class="safe">
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>寿险</h4>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <div class="safe-nav">
+                            <a href="#">返还寿险</a>
+                            <a href="#">分红寿险</a>
+                            <a href="#">年金寿险</a>
+                        </div>
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>特别推荐</h4>
+                        </div>
+                        <div class="safebox">
+                            <div class="safebox-left">
+                                <em>特别推荐</em>
+                                <h3>大福星</h3>
+                                <h5>灵活搭配多种保障</h5>
+                                <p>120种重疾</p>
+                                <p>灵活搭配多种保障</p>
+                                <p>终身身故保障</p>
+                            </div>
+                            <div class="safebox-right">
+                                <p>平安人寿保险</p>
+                                <h2>5元/起</h2>
+                                <a href="#">立即投保</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li>
+                    <a href="#"><i></i>旅游险</a>
+                    <div class="safe">
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>旅游险</h4>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <div class="safe-nav">
+                            <a href="#">境内旅游</a>
+                            <a href="#">境外旅游</a>
+                        </div>
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>特别推荐</h4>
+                        </div>
+                        <div class="safebox">
+                            <div class="safebox-left">
+                                <em>特别推荐</em>
+                                <h3>全球境外旅游保险</h3>
+                                <h5>意外保障高达50万</h5>
+                                <p>意外身故,伤残</p>
+                                <p>意外伤害医疗</p>
+                                <p>突发急性病身故/全残</p>
+                            </div>
+                            <div class="safebox-right">
+                                <p>平安财产保险</p>
+                                <h2>45元/起</h2>
+                                <a href="#">立即投保</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li>
+                    <a href="#"><i></i>财产险</a>
+                    <div class="safe">
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>财产险</h4>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <div class="safe-nav">
+                            <a href="#">家庭财产</a>
+                            <a href="#">个人财产</a>
+                        </div>
+                        <div class="title">
+                            <div class="left-line"></div>
+                            <h4>特别推荐</h4>
+                        </div>
+                        <div class="safebox">
+                            <div class="safebox-left">
+                                <em>特别推荐</em>
+                                <h3>平安全家福</h3>
+                                <h5>房屋财产+个人意外 全方位保障</h5>
+                                <p>房屋</p>
+                                <p>房屋装修</p>
+                                <p>室内财产</p>
+                            </div>
+                            <div class="safebox-right">
+                                <p>平安财产保险</p>
+                                <h2>365元/起</h2>
+                                <a href="#">立即投保</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li>
+                    <a href="#"><i></i>车险</a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <a href="#"><img src="../static/images/021_r.jpg" alt=""></a>
+            <a href="#"><img src="../static/images/022_r.png" alt=""></a>
+            <div class="left_r"><i></i></div>
+            <div class="right_r"><i></i></div>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="aside-right">
+            <a href="#"><img src="../static/images/024_r.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<div class="group">
+    <div class="main">
+        <ul>
+            <li>
+                <img src="../static/images/029_r.jpg" alt="">
+                <div class="mask-title">
+                    <p>爱满分少儿疾病险</p>
+                    <h6>5元起/天</h6>
+                </div>
+                <div class="mask-con">
+                    <h6>爱满分少儿疾病险</h6>
+                    <h4>5元起/天</h4>
+                    <p>27项全球范围综合保障</p>
+                    <a href="#">立即投保</a>
+                </div>
+            </li>
+            <li>
+                <img src="../static/images/030_r.jpg" alt="">
+                <div class="mask-title">
+                    <p>短期综合意外险</p>
+                    <h6>3.5元/起</h6>
+                </div>
+                <div class="mask-con">
+                    <h6>短期综合意外险</h6>
+                    <h4>3.5元/起</h4>
+                    <p>享意外住院垫付</p>
+                    <a href="#">立即投保</a>
+                </div>
+            </li>
+            <li>
+                <img src="../static/images/031_r.png" alt="">
+                <div class="mask-title">
+                    <p>成人重大疾病</p>
+                    <h6>5.98元/起</h6>
+                </div>
+                <div class="mask-con">
+                    <h6>成人重大疾病</h6>
+                    <h4>5.98元/起</h4>
+                    <p>30种重疾，最高50万重疾保障</p>
+                    <a href="#">立即投保</a>
+                </div>
+            </li>
+        </ul>
+        <div class="group-right">
+            <div class="groupbox">
+                <div class="group1 groupshow">
+                    <img src="../static/images/037_r.png" alt="">
+                    <h3>平安移动官网</h3>
+                    <p>你的专业金融助手</p>
+                    <p>汇你所想 , 惠你所需</p>
+                </div>
+                <div class="group1">
+                    <img src="../static/images/033_r.png" alt="">
+                    <h3>微平安</h3>
+                    <p>一站式财富管理微服务平台</p>
+                    <p>微平安，体验至简金融生活</p>
+                </div>
+                <div class="group1">
+                    <img src="../static/images/038_r.png" alt="">
+                    <h3>平安就在你身边</h3>
+                    <p>随身金融工具</p>
+                    <p>平安随行 便捷同行</p>
+                </div>
+            </div>
+            <div class="groupline"></div>
+            <div class="groupimg">
+                <img src="../static/images/034_r.png" alt="">
+                <img src="../static/images/035_r.png" alt="">
+                <img src="../static/images/036_r.jpg" alt="">
+            </div>
         </div>
     </div>
 </div>
 
+<div class="section">
+    <div class="main">
+        <h2>
+            <img src="../static/images/039_r.png" alt="">
+            <a href="#">查看更多></a>
+        </h2>
+        <div class="topic">
+            <div class="topic-left">
+                <a href="#">
+                    <img src="../static/images/040_r.png" alt="">
+                    <div class="topicmask">
+                        <h4>E康重疾无忧</h4>
+                        <p>最高涵盖99种重疾+16种轻症</p>
+                        <h5>159元/起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-right">
+                <a href="#">
+                    <img src="../static/images/041_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>平安e家保2018</h4>
+                        <p>小病有保障 ; 支持线上问诊</p>
+                        <h5>101元/年起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-right">
+                <a href="#">
+                    <img src="../static/images/042_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>抗癌卫士2018</h4>
+                        <p>风湿等慢病可投保; 护理费可报</p>
+                        <h5>134元/年起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-bot">
+                <a href="#">
+                    <img src="../static/images/043_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>抗癌卫士海外保</h4>
+                        <p>最全球最顶尖癌症专家资源;</p>
+                        <h5>134元/年起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-bot2">
+                <a href="#">
+                    <img src="../static/images/044_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>平安e生保plus</h4>
+                        <p>0-60有无社保均可投保</p>
+                        <h5>0.4元/天起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="main">
+        <h2>
+            <img src="../static/images/046_r.png" alt="">
+            <a href="#">查看更多></a>
+        </h2>
+        <div class="topic">
+            <div class="topic-left">
+                <a href="#">
+                    <img src="../static/images/047_r.jpg" alt="">
+                    <div class="topicmask">
+                        <h4>一年期意外保险</h4>
+                        <p>提供全方位综合保障</p>
+                        <h5>43.8元/天起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-right">
+                <a href="#">
+                    <img src="../static/images/048_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>短期交通意外险</h4>
+                        <p>独家最高800万保额</p>
+                        <h5>0.51元/人/天起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-right">
+                <a href="#">
+                    <img src="../static/images/049_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>全家无忧保障计划</h4>
+                        <p>全家人的综合保障计划</p>
+                        <h5>340元/年起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-bot">
+                <a href="#">
+                    <img src="../static/images/050_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>短期综合意外险</h4>
+                        <p>高额保障,安全出行</p>
+                        <h5>3.5元/月起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+            <div class="topic-bot2">
+                <a href="#">
+                    <img src="../static/images/051_r.png" alt="">
+                    <div class="topicmask2">
+                        <h4>一年期交通意外险</h4>
+                        <p>独家最高800万保额</p>
+                        <h5>44元/年起</h5>
+                        <div class="insure">立即投保</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed">
+    <ul>
+        <li class="fixed1">
+            <div class="fixopen">
+                <img src="../static/images/054_r.png" alt="">
+                <p>平安+PLUS APP</p>
+                <div class="fixline"></div>
+                <img src="../static/images/055_r.png" alt="">
+                <p>平安官网微信公众号</p>
+            </div>
+        </li>
+        <li class="fixed2">
+            <a href="#">
+                <i></i>
+                <p>在线</br>客服</p>
+            </a>
+        </li>
+        <li class="fixed3">
+            <i></i>
+            <p>返回</br>顶部</p>
+        </li>
+    </ul>
+</div>
+<div id="foot"></div>
+
+<script src="../static/scripts/require.js" data-main="../static/scripts/insurance"></script>
+<!-- <script src="../static/scripts/jquery.js"></script> -->
+<!-- <script src="../static/scripts/insurance.js"></script> -->
 
 
-
-<script src="../static/scripts/insurance.js"></script>
 </body>
 </html>

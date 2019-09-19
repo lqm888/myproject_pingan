@@ -111,7 +111,7 @@ gulp.task('images', function(){
 
 gulp.task('clean', function(){
     // 首先取得dist/*下的所有文件,read: false 返回空值，也就是并不会去读取文件
-    gulp.src('dist/*', {read: false})
+    gulp.src('dist/**/*.*', {read: false})
     //删除dist/*下的所有文件
     .pipe(clean())
 })
