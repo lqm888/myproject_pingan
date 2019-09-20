@@ -1,3 +1,4 @@
+@import 'iconfont_r.css';
 .loginbar_r{
     height: 30px;
     background: #f9f9f9;
@@ -5,26 +6,50 @@
 	    width: 1180px;
 	    margin: 0 auto;
 		.welcome_r{
-		    width: 279px;
+		    // width: 279px;
 		    height: 30px;
 		    float: left;
 		    padding-left: 10px;
 		    box-sizing: border-box;
 		    border-left: 1px solid #f2f2f2;
 		    border-right: 1px solid #f2f2f2;
-			
+			.islogin{
+				float: left;
+				display: none;
+				span{
+					line-height: 30px;
+					font-size: 12px;
+					cursor: pointer;
+					&.un{
+						font-size: 14px;
+						margin-left:5px;
+						color: #333333;
+					}
+					&.signOut{
+						margin-left:10px;
+
+						&:hover{
+							color : #f36c28;
+						}
+					}
+				}
+			}
+			.login{
+				overflow: hidden;
+			}
 			p:nth-child(1){
 			    font-size: 12px;
 			    line-height: 30px;
 			    color: #666666;
-			    float: left;
+				float: left;
+				margin-right:31px;
 			}
 			p:nth-child(2){
 			    font-size: 12px;
 			    line-height: 30px;
 			    color: #666666;
 			    float: left;
-			    margin-left: 31px;
+			    // margin-left: 31px;
 			}
 			a{
 			    font-size: 12px;
@@ -78,7 +103,7 @@
 						}
 						&:after{
 							content: '';
-							background: url(../images/020_r.png) no-repeat 0 0;
+							background: url(../images/publichead/020_r.png) no-repeat 0 0;
 							width: 15px;
 							height: 10px;
 							position: absolute;
@@ -193,7 +218,7 @@
 							position: relative;
 							&:after{
 								content: '';
-								background: url(../images/020_r.png) no-repeat 0 0;
+								background: url(../images/publichead/020_r.png) no-repeat 0 0;
 								width: 15px;
 								height: 10px;
 								position: absolute;
@@ -230,7 +255,7 @@
 						position: relative;
 						&:after{
 							content: '';
-							background: url(../images/020_r.png) no-repeat 0 0;
+							background: url(../images/publichead/020_r.png) no-repeat 0 0;
 							width: 15px;
 							height: 10px;
 							position: absolute;

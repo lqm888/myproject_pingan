@@ -1,3 +1,4 @@
+@import "./reset.css";
 @import "./publichead";
 @import "./footer";
 
@@ -254,6 +255,37 @@
                         margin: 13px auto;
                         &:hover{
                             background: linear-gradient(to bottom,#e63f0c,#ff7e45);
+                        }
+                    }
+                }
+                .group-bot{
+                    ul{
+                        overflow: hidden;
+                        margin-left: 25px;
+                        padding-top: 54px;
+                        li{
+                            float: left;
+                            margin-right: 20px;
+                            position: relative;
+                            a{
+                                width: 180px;
+                                height: 40px;
+                                background-color: #f1f0f0;
+                                color: #f36c28;
+                                line-height: 40px;
+                                text-align: center;
+                                display: block;
+                                font-size: 16px;
+                                border-radius: 3px;
+                                position: absolute;
+                                left: 30px;
+                                bottom: 20px;
+                                transition: all .1s linear;
+                                // &:hover{
+                                //     transform: translateY(-8px);
+                                //     background-color: #fff;
+                                // }
+                            }
                         }
                     }
                 }
