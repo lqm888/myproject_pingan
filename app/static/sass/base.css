@@ -1,0 +1,140 @@
+/* CSS重置 */
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+th,
+td,
+p {
+  margin: 0;
+  padding: 0
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none
+}
+
+ol,
+ul,
+li {
+  list-style: none
+}
+
+img {
+  vertical-align: top;
+  border: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+/** html body{background-image:url(about:blank);background-attachment:fixed;}*/
+* html body {
+  background-attachment: fixed;
+}
+
+body {
+  width: auto;
+  height: auto;
+  _height: 100%;
+  min-height: 100%;
+  color: #666;
+}
+
+body,
+input,
+textarea {
+  font: 12px/1.5 "Microsoft Yahei", arial, 'Simsun';
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  {
+  font-size: 100%;
+  font-weight: normal
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fc6921;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 0;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline-width: 0;
+}
+
+.clear {
+  clear: both
+}
+
+.c:after {
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.c {
+  zoom: 1
+}
+
+.dn,
+.dsn {
+  display: none;
+}
+

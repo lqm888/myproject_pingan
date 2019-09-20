@@ -1,0 +1,283 @@
+body {
+	background: #ebebeb;
+}
+
+/* 面包屑 Start */
+.breadCrumb {
+	width: 1200px;
+	line-height: 46px;
+	font-size: 14px;
+	color: #171717;
+	margin: 0 auto;
+}
+.breadCrumb em {
+	font-size: 16px;
+	font-style: normal;
+}
+.breadCrumb i {
+	padding: 0 8px;
+}
+.breadCrumb a {
+	color: #171717;
+}
+.breadCrumb a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+/* 面包屑 End */
+
+
+.contentWrap {
+	width: 1160px;
+	background: #fff;
+	padding: 20px;               
+	margin: 0 auto 30px;
+}
+/* Tab ui */
+.tabNav {
+	line-height: 40px;
+	border-bottom: 2px #ddd solid;
+}
+.tabNav ul li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #171717;
+	font-weight: bold;
+	margin-right: 60px;
+	margin-bottom: -2px;
+	cursor: pointer;
+	border-bottom: 2px transparent solid;
+}
+.tabNav ul li:hover {
+	color: #f60
+}
+.tabNav ul .curr {
+	color: #f60;
+	border-color: #f60;
+}
+.tabCont {
+	padding: 20px 0 0;
+}
+
+/* 联系我们 电话客服 */
+.phoneService {
+	padding: 10px 0 0;
+	position: relative;
+}
+.appService {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	cursor: pointer;
+	padding-left: 10px;
+	border-left: 2px solid #fc6921;
+}
+.appService h3,h4{
+	font-weight: bold;
+}
+
+.appService:hover  .qrcodeAppBox {
+	display: block;
+}
+.qrcodeAppBox {
+	display: none;
+	position: absolute;
+	width: 136px ;
+	height: 162px;
+	background: url(../images/pic_su/qrcode_app_su.png) no-repeat 0 0;
+}
+.qrcodeAppBox img {
+	width: 105px;
+    padding: 20px 0 0 15px;
+}
+.phoneService h3 {
+	width:70px;
+	height:30px;
+	background-size:100px 30px;
+	line-height: 30px;
+    font-size: 16px;
+    color:#fff;
+	padding-left:38px;
+	border-left: 0;
+	background: #FC6921 url(../images/pic_su/app_bg_su.png) no-repeat 7px center;
+	border-radius: 5px;
+}
+.phoneService .inner {
+    margin: 48px auto 0;
+    border: 1px #ddd solid;
+    border-radius: 2px;
+}
+.branchPhoneArea {
+	float: left;
+	width: 273px;
+	min-height: 255px;
+	padding: 15px 0 0 15px;
+    border-left: 1px #ddd solid;
+    margin-left: -1px;
+}
+.branchPhoneArea h4 {
+	line-height: 24px;
+	font-size: 14px;
+	color: #fc6921;
+	padding: 0 0 10px
+}
+.branchPhoneArea dl {
+	line-height: 26px;
+	font-size: 12px;
+	color: #666;
+	clear: both;
+}
+.branchPhoneArea dt {
+	float: left;
+	width: 100px;
+}
+.branchPhoneArea dt a {
+	color: #666;
+}
+.branchPhoneArea dt a:hover {
+	color: #fc6921;
+	text-decoration: underline;
+}
+.branchPhoneArea dd {
+	margin-left: 110px;
+}
+.ico_service {
+	display: inline-block;
+	width: 20px;
+	height: 22px;
+	text-indent: -999em;
+	vertical-align: -2px;
+	*vertical-align: middle;
+	margin-left: 10px;
+	background: url(../images/pic_su/icon_01_su.png) no-repeat;
+	background-position: 0 -45px;
+}
+.ico_service:hover {
+	background-position: 0 -70px;
+}
+/* 微客服 */
+.microService {
+	margin: -10px 0 0 -10px;
+}
+.microService li {
+	float: left;
+	width: 348px;
+	margin: 10px 0 0 10px;
+	padding: 15px;
+	border: 1px #e5e5e5 solid;
+	border-radius: 3px;
+}
+.microService li:hover {
+	border-color: #ffb997
+}
+.microService li img {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.microService .weChat {
+	margin-left: 115px;
+	line-height: 18px;
+}
+.microService .weChat h3 {
+	line-height: 26px;
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	padding: 0 0 10px;
+}
+.microService .weChat h4 {
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+.microService .weChat h5 {
+	font-weight: normal;
+	font-size: 14px;
+	color: #171717;
+}
+
+/* APP */
+.appArea {
+	margin-top: -15px;
+	overflow: hidden;
+}
+.appArea li {
+	float: left;
+	width: 270px;
+	padding: 20px 20px 20px 0;
+	border-bottom: 1px #e5e5e5 solid;
+	margin-bottom: -1px;
+}
+.appArea li a {
+	display: inline-block;
+	width: auto;
+	height: 60px;
+}
+.appArea li a:hover {
+	text-decoration: none;
+}
+.appArea li img {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.appArea li .desc {
+	margin-left: 75px;
+}
+.appArea li h3 {
+	line-height: 24px;
+	font-size: 18px;
+	color: #f60;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.appArea li h3:hover {
+	text-decoration: underline;
+}
+.appArea li p {
+	line-height: 24px;
+	font-size: 12px;
+	color: #666;
+}
+
+
+
+/* 服务网点 */
+.serviceNetwork {
+	padding: 0 0 10px
+}
+.serviceNetwork h3 {
+    line-height: 22px;
+    font-size: 20px;
+    color: #171717;
+    padding-left: 8px;
+    border-left: 2px solid #fc6921;
+}
+.serviceNetwork ul {
+    border: 1px #ddd solid;
+    border-radius: 2px;
+    margin: 18px auto 0;
+	padding: 5px 0 20px;
+}
+.serviceNetwork li {
+	float: left;
+	line-height: 18px;
+	font-size: 14px;
+	padding: 0 25px;
+    border-left: 1px solid #ddd;
+    margin: 15px 0 0 -1px;
+}
+.serviceNetwork li a {
+	color: #171717
+}
+.serviceNetwork li a:hover {
+	color: #fc6921;
+	text-decoration: underline;
+}
+
+

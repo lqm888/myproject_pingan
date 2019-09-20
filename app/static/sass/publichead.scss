@@ -1,0 +1,317 @@
+@import 'iconfont_r.css';
+.loginbar_r{
+    height: 30px;
+    background: #f9f9f9;
+	.main{
+	    width: 1180px;
+	    margin: 0 auto;
+		.welcome_r{
+		    // width: 279px;
+		    height: 30px;
+		    float: left;
+		    padding-left: 10px;
+		    box-sizing: border-box;
+		    border-left: 1px solid #f2f2f2;
+		    border-right: 1px solid #f2f2f2;
+			.islogin{
+				float: left;
+				display: none;
+				span{
+					line-height: 30px;
+					font-size: 12px;
+					cursor: pointer;
+					&.un{
+						font-size: 14px;
+						margin-left:5px;
+						color: #333333;
+					}
+					&.signOut{
+						margin-left:10px;
+
+						&:hover{
+							color : #f36c28;
+						}
+					}
+				}
+			}
+			.login{
+				overflow: hidden;
+			}
+			p:nth-child(1){
+			    font-size: 12px;
+			    line-height: 30px;
+			    color: #666666;
+				float: left;
+				margin-right:31px;
+			}
+			p:nth-child(2){
+			    font-size: 12px;
+			    line-height: 30px;
+			    color: #666666;
+			    float: left;
+			    // margin-left: 31px;
+			}
+			a{
+			    font-size: 12px;
+			    float: left;
+			    width: 32px;
+			    height: 18px;
+			    border: 1px solid #f15a0e;
+			    color: #ff6600;
+			    line-height: 18px;
+			    text-align: center;
+			    margin-top: 5px;
+			    border-radius: 2px;
+			    margin-left: 7px;
+			}
+			a:nth-child(4){
+			    margin-left: 12px;
+			}
+		}
+		ul{
+		    float: right;
+			li{
+			    float: left;
+			    width: 105px;
+			    line-height: 30px;
+			    text-align: center;
+			    border-left: 1px solid #f2f2f2;
+				a span{
+				    margin-right: 7px;
+				    color: #f36c28;
+				    font-size: 14px;
+				}
+				a:hover{
+				    color: #f36c28;
+				}
+				&:nth-child(2){
+					position: relative;
+					.qrcode{
+						width: 128px;
+						height: 136px;
+						cursor: pointer;
+						position: absolute;
+						top: 34px;
+						border: 1px solid #dddddd;
+						border-radius: 3px;
+						z-index: 5;
+						background: #fff;
+						padding-top: 12px;
+						display: none;
+						img{
+							margin: 0 auto;
+						}
+						&:after{
+							content: '';
+							background: url(../images/publichead/020_r.png) no-repeat 0 0;
+							width: 15px;
+							height: 10px;
+							position: absolute;
+							top: -9px;
+							left: 58px;
+						}
+					}
+				}	
+				&:nth-child(4){
+					position: relative;
+					.webmap{
+						width: 1180px;
+						height: 270px;
+						overflow: hidden;
+						background: #fff;
+						display: none;
+						z-index: 5;
+						position: absolute;
+						top: 29px;
+						left: -968px;
+						box-shadow:  0px 0px 8px #c7c7c7;
+						padding: 27px 0 41px 25px;
+						box-sizing: border-box;
+						ol{
+							width: 92px;
+							height: 160px;
+							float: left;
+							li{
+							   border-left: none;
+							   text-align: left;
+							   line-height: 26px;
+						   }
+
+						}
+						h4{
+							font-size: 14px;
+							line-height: 30px;
+							text-align: left;
+							font-weight: bold;
+						}
+						.mapline{
+							width: 30px;
+							height: 2px;
+							background: #333333;
+							margin-bottom: 19px;
+						}
+						.webmap-left{
+							width: 191px;
+							height: 100%;
+							float: left;
+							margin-right: 45px;
+							border-right: 1px solid #dddddd;
+						}
+						.webmap-right{
+							float: left;
+							width: 120px;
+						}
+					}
+				}
+				
+			}
+			li:nth-child(4) a span{
+			    margin: 0 0 0 6px;
+			    color: #a1a1a1;
+			    font-size: 14px;
+			}
+		}
+	}
+}
+
+.header_r{
+    height: 80px;
+	background: #ffffff;
+	position: relative;
+	.main{
+	    width: 1180px;
+	    margin: 0 auto;
+		.logo{
+		    padding-top: 11px;
+		    float: left;
+		}
+		ul{
+		    float: left;
+		    margin-left: 70px;
+			li{
+			    float: left;
+			    font-size: 18px;
+			    margin-right: 50px;
+			    line-height: 80px;
+				a{
+				    color: #171717;
+				}
+				&:nth-child(2){
+					.wealth{
+						display: none;
+						width: 100%;
+						height: 188px;
+						z-index: 5;
+						position: absolute;
+						background: #fff;
+						top: 80px;
+						left: 0;
+						border-top: 1px solid #dddddd;
+						border-bottom: 1px solid #dddddd;
+						box-shadow: 0 0 8px #dddddd;
+						.box{
+							padding-top: 20px;
+							display: flex;
+							justify-content: space-around;
+							width: 1180px;
+							margin: 0 auto;
+							position: relative;
+							&:after{
+								content: '';
+								background: url(../images/publichead/020_r.png) no-repeat 0 0;
+								width: 15px;
+								height: 10px;
+								position: absolute;
+								top: -9px;
+								left: 375px;
+							}
+							img{
+								float: left;
+							}
+						}
+					}
+				}
+			}
+			li:nth-child(4){
+				margin-right: 40px;
+				.insur{
+					display: none;
+					width: 100%;
+					height: 188px;
+					z-index: 5;
+					position: absolute;
+					background: #fff;
+					top: 80px;
+					left: 0;
+					border-top: 1px solid #dddddd;
+					border-bottom: 1px solid #dddddd;
+					box-shadow: 0 0 8px #dddddd;
+					.box{
+						padding-top: 20px;
+						display: flex;
+						justify-content: space-around;
+						width: 1180px;
+						margin: 0 auto;
+						position: relative;
+						&:after{
+							content: '';
+							background: url(../images/publichead/020_r.png) no-repeat 0 0;
+							width: 15px;
+							height: 10px;
+							position: absolute;
+							top: -9px;
+							left: 547px;
+						}
+						img{
+							float: left;
+						}
+					}
+				}
+			}
+			li:nth-child(5){
+			    margin-right: 27px;
+			}
+		}
+		.search{
+			float: right;
+			position: relative;
+			margin-top: 15px;
+			input{
+				width: 340px;
+				height: 32px;
+				line-height: 30px;
+				outline: none;
+				border: 1px solid #dddddd;
+				padding-left: 8px;
+				box-sizing: border-box;
+			}
+			.hotkey{
+				margin-top: 7px;
+				margin-left: 5px;
+				i{
+					float: left;
+					color: #666666;
+					font-size: 12px;
+					margin-right: 5px;
+				}
+				a{
+					color: #ff6600;
+					font-size: 12px;
+					float: left;
+					margin-right: 16px;
+						&:hover{
+						text-decoration: underline;
+					}
+				}
+				
+			}
+		}
+		.search>a{
+			position: absolute;
+			top: 7px;
+			right: 7px;
+			font-size: 18px;
+			color: #b3b3b3;
+		}
+	}
+}
